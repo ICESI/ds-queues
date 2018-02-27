@@ -49,7 +49,7 @@ reboot
 ```
 
 ```
-systemctl start rabbitmq-server
+systemctl restart rabbitmq-server
 rabbitmqctl stop_app
 rabbitmqctl reset
 rabbitmqctl start_app
@@ -70,7 +70,7 @@ reboot
 ```
 
 ```
-systemctl start rabbitmq-server
+systemctl restart rabbitmq-server
 rabbitmqctl stop_app
 rabbitmqctl reset
 rabbitmqctl start_app
