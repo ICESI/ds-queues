@@ -12,7 +12,7 @@ Correo: daniel.barragan at correo.icesi.edu.co
 La configuración de RabbitMQ en cluster permite aumentar la cantidad de usuarios que pueden ser atendidos por las aplicaciones que emplean colas de mensajes
 
 ### Desarrollo
-1. Los siguientes pasos permiten desplegar un cluster de RabbitMQ. Se asume que en cada nodo ya se encuentra instalado el servicio de RabbitMQ
+1. Los siguientes pasos permiten desplegar un cluster de RabbitMQ. En procesos de aprovisionamiento automático se sugiere la configuración de los hostnames antes de la instalación de RabbitMQ.
 
   En el nodo maestro:
 
@@ -28,6 +28,7 @@ La configuración de RabbitMQ en cluster permite aumentar la cantidad de usuario
   reboot
   ```
 
+  Instala el servidor de RabbitMQ o reinicie el servicio si ya lo tiene
   ```
   systemctl restart rabbitmq-server
   ```
@@ -38,6 +39,7 @@ La configuración de RabbitMQ en cluster permite aumentar la cantidad de usuario
   cat /var/lib/rabbitmq/.earlang_cookie
   ```
 
+  Ejecute las siguientes instrucciones para la configuración del cluster
   ```
   rabbitmqctl stop_app
   rabbitmqctl reset
@@ -59,8 +61,13 @@ La configuración de RabbitMQ en cluster permite aumentar la cantidad de usuario
   reboot
   ```
 
+  Instala el servidor de RabbitMQ o reinicie el servicio si ya lo tiene
   ```
   systemctl restart rabbitmq-server
+  ```
+
+  Ejecute las siguientes instrucciones para la configuración del cluster
+  ```
   rabbitmqctl stop_app
   rabbitmqctl reset
   rabbitmqctl start_app
@@ -80,8 +87,13 @@ La configuración de RabbitMQ en cluster permite aumentar la cantidad de usuario
   reboot
   ```
 
+  Instala el servidor de RabbitMQ o reinicie el servicio si ya lo tiene
   ```
   systemctl restart rabbitmq-server
+  ```
+
+  Ejecute las siguientes instrucciones para la configuración del cluster
+  ```
   rabbitmqctl stop_app
   rabbitmqctl reset
   rabbitmqctl start_app
