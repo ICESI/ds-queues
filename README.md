@@ -1,4 +1,4 @@
-### Colas de mensajería
+### Mensajería
 
 ![][1]
 Figura 1. **Balanceo de carga con RabbitMQ**
