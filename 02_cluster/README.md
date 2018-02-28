@@ -113,3 +113,4 @@ La configuración de RabbitMQ en cluster permite aumentar la cantidad de usuario
 * http://blog.flux7.com/blogs/tutorials/how-to-creating-highly-available-message-queues-using-rabbitmq
 * http://linuxpitstop.com/rabbitmq-cluster-on-centos-7/  
 * http://devopspy.com/linux/rabbitmq-cluster-centos-7/  
+* http://thesoftjaguar.com/posts/2014/06/18/rabbitmq-cluster/
