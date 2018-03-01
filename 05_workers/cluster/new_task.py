@@ -2,8 +2,9 @@
 import pika
 import sys
 
+credentials = pika.PlainCredentials('icesi', 'distribuidos')
 connection = pika.BlockingConnection(pika.ConnectionParameters(
-        host='localhost'))
+host='192.168.33.14',virtual_host='/icesi',credentials=credentials))
 channel = connection.channel()
 
 channel.queue_declare(queue='task_queue', durable=True)
